@@ -18,6 +18,7 @@ const App = () => {
   const filterItems = (category) => {
     if (category === "all") {
       setMenuList(menu);
+      return;
     }
     setMenuList(menu.filter((item) => item.category === category));
   };
